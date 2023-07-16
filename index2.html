@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <script>
+            // 1.  defination
+            function myFunctionA(x,y){
+                // function body
+                return x+y;
+            }
+
+            //2. calling
+            let result = myFunctionA(10,30);
+            console.log(result);
+
+            //function as argument 
+            let r2 = myFunctionA(10,myFunctionA(10,30));
+            console.log(r2);
+
+            let r3 = myFunctionA(10,myFunctionA(10,myFunctionA(10,10)));
+            console.log(r3);
+
+            function a(){
+                return 10;
+            }
+
+            function b(){
+                return 20;
+            }
+
+            function c(x,y){
+                return x+y;
+            }
+
+            //function as a argument 
+            let z = c(a(),b());
+            console.log(z);
+       </script> 
+    </body>
+</html>
