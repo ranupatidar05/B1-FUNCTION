@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+    </head>
+    <body>
+        <script>
+            //1. defination
+            function myFunction(x,y){
+               return x+y; 
+            }
+            //2. calling
+            let z = myFunction(10,20);
+            var a = myFunction(50,20);
+            console.log(z);
+
+            alert("a"); // calling
+
+            var b = myFunction(40,myFunction(50,20));
+            alert(b);
+
+
+            //var student1 = 'ranu';
+           
+            var students = ['ranu',"riva","rina",'ranju',"ritika"];
+            console.log('Hello '+students[1]+' how are you?');
+
+            //1. defination
+            function greet(m){
+                console.log('hello '+m );
+            }
+            //2. calling 
+            
+            for(var i=0;i<=4;i++){
+                greet(students[i]);
+            }
+
+            function greet2(s){
+                for(var i=0;i<=4;i++){
+                    console.log('@ hello '+s[i]);
+                }
+            }
+
+            greet2(students);
+
+
+        </script>
+    </body>
+</html>
